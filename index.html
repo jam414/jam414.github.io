@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veon Prime | Technology for a Sustainable Future</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    .animate-fade-in {
+      animation: fade-in 1.5s ease-out forwards;
+    }
+  
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- <h1 class="text-xl font-bold text-blue-600">Veon Prime</h1> -->
+      <a href="#top">
+        <img src="images/logo.png" alt="Veon Prime Logo" class="h-10 w-auto" />
+      </a>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#consulting" class="hover:text-blue-600">Consulting</a></li>
+        <li><a href="#oem" class="hover:text-blue-600">OEM Partnership</a></li>
+        <li><a href="#system-integrator" class="hover:text-blue-600">System Integration</a></li>
+        <li><a href="#automotive" class="hover:text-blue-600">Automotive</a></li>
+        <li><a href="#oilgas" class="hover:text-blue-600">Oil & Gas</a></li>
+        <li><a href="#healthcare" class="hover:text-blue-600">Healthcare</a></li>
+        <li><a href="#security" class="hover:text-blue-600">Security</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- <header class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white" data-aos="fade-in">
+    <h2 class="text-4xl font-bold mb-4">Empowering Tomorrow with Innovation</h2>
+    <p class="text-xl">Sustainable | Scalable | Secure</p>
+  </header> -->
+
+    <header class="relative bg-cover bg-center" 
+    style="background-image: url('images/head-bckgrnd-hero.jpg'); height: 350px; width: 100%;" 
+    data-aos="fade-in">
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
+
+    <!-- Text content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+    <h1 class="text-4xl font-bold mb-2  animate-fade-in">Empowering Tomorrow with Innovation</h1>
+    <p class="text-lg text-white delay-200">Sustainable | Scalable | Secure</p>
+    </div>
+    </header>
+
+  <!-- Consulting 
+  <section id="consulting" class="max-w-6xl mx-auto py-16 px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-blue-600">Technology Consulting</h2>
+    <p class="mb-6">We help businesses in Digital Transformation, Process Optimization, AI, and Smart Systems deployment across sectors.</p>
+    <img src="https://source.unsplash.com/800x400/?consulting,technology" alt="Consulting" class="rounded-lg shadow-lg" />
+  </section> -->
+
+  <section id="consulting" class="max-w-6xl mx-auto py-16 px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-blue-600">Technology Consulting</h2>
+    <p class="mb-6">We help businesses with Digital Transformation, AI adoption, process optimization and smart systems.</p>
+    <img src="images/consulting-hero.jpg" alt="Consulting innovation" class="rounded-lg shadow-lg" data-aos="zoom-in" />
+  </section>
+
+  <!-- OEM Partnerships -->
+  <section id="oem" class="bg-gray-100 py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">OEM Technology Partnership</h2>
+      <p class="mb-6">Partnering with global OEMs to deliver cutting-edge solutions in automation, MES, IIoT, and AI platforms.</p>
+      <img src="images/oem-hero.jpg" alt="OEM" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- System Integrator -->
+  <section id="system-integrator" class="py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">System Integration</h2>
+      <p class="mb-6">Delivering turnkey projects in Smart Manufacturing, Cloud Integration, and Data Infrastructure in collaboration with leading integrators.</p>
+      <img src="images/si-hero.jpg" alt="System Integrator" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Smart Security -->
+  <section id="security" class="py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Information & Infrastructure Security</h2>
+      <p class="mb-6">Smart building management, industrial surveillance, secure infrastructure with AI-based monitoring and threat prevention.</p>
+      <img src="images/infosec-hero.jpg" alt="Security" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Automotive -->
+  <section id="automotive" class="bg-gray-100 py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Automotive Technology</h2>
+      <p class="mb-6">EV transformation, mobility solutions, and connected vehicle ecosystems for future-forward automotive manufacturers.</p>
+      <img src="images/auto-hero.jpg" alt="Automotive" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Oil & Gas -->
+  <section id="oilgas" class="py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Oil & Gas Sector</h2>
+      <p class="mb-6">Smart asset management, pipeline monitoring, AI-based predictive maintenance, and operational efficiency for the energy industry.</p>
+      <img src="images/oil-hero.jpg" alt="Oil & Gas" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Healthcare -->
+  <section id="healthcare" class="bg-gray-100 py-16 px-4" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Healthcare & Dentistry</h2>
+      <p class="mb-6">Digital health platforms, diagnostics, and smart patient management systems aligned with regional healthcare transformation goals.</p>
+      <img src="images/health-hero.jpg" alt="Healthcare" class="rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  
+
+  <!-- Contact -->
+  <section id="contact" class="bg-blue-50 py-16 px-4" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-600">Let's Build the Future Together</h2>
+      <p class="mb-4">Email us at <a href="mailto:info@veonprime.com" class="text-blue-700 underline">info@veonprime.com</a></p>
+      <p>Dubai World Central | Global Presence | info@veonprime.com</p>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-white shadow">
+    <p class="text-sm text-gray-600">&copy; 2025 Veon Prime. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
