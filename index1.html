@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veon Prime | Technology for a sustainable future</title>
+<meta name="description" content="Veon Prime is a Dubai technology company delivering AI consulting, OEM partnerships, system integration and infrastructure security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f7;--bg2:#e1e9f0;--fg:#0b1b33;--mut:#4a5d78;--line:rgba(11,27,51,.16);--card:#fff;--amb:#b45f06;--onamb:#fff;--sea:#0a7f78;--hf:rgba(238,243,247,.92);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07142b;--bg2:#0c2040;--fg:#e9f0fa;--mut:#9fb1ca;--line:rgba(233,240,250,.16);--card:#0c2040;--amb:#ffb454;--onamb:#07142b;--sea:#5fd1c4;--hf:rgba(7,20,43,.9);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#07142b;--bg2:#0c2040;--fg:#e9f0fa;--mut:#9fb1ca;--line:rgba(233,240,250,.16);--card:#0c2040;--amb:#ffb454;--onamb:#07142b;--sea:#5fd1c4;--hf:rgba(7,20,43,.9);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hf);z-index:60}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.05;letter-spacing:-.025em;margin:0}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--amb);outline-offset:3px;border-radius:4px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--hf);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.2rem "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.logo svg{width:30px;height:30px}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:.97rem;color:var(--mut)}
+nav a:hover{color:var(--fg)}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit;font-size:1rem;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn.pri{background:var(--amb);color:var(--onamb)}
+.btn.pri:hover{filter:brightness(1.08)}
+.btn.sec{border-color:var(--line);color:var(--fg)}
+.btn.sec:hover{border-color:var(--fg)}
+nav .btn{padding:9px 18px;font-size:.93rem;color:var(--onamb)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--fg);border-radius:10px;width:44px;height:44px;cursor:pointer}
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+#f{position:absolute;inset:0;width:100%;height:100%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 8%,transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;padding-top:72px;padding-bottom:72px}
+.hero h1{font-size:clamp(2.7rem,7.4vw,5.9rem);font-weight:700;max-width:11.5ch}
+.hero p.lead{font-size:clamp(1.1rem,2vw,1.3rem);color:var(--mut);max-width:34em;margin:26px 0 34px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.facts p{margin:0;padding:26px 24px 26px 0;font-size:.98rem;color:var(--mut)}
+.facts p+p{padding-left:24px;border-left:1px solid var(--line)}
+.facts b{display:block;color:var(--fg);font-weight:600;margin-bottom:2px}
+section{padding:104px 0}
+.head{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;margin-bottom:48px;align-items:end}
+.head h2{font-size:clamp(2rem,4.4vw,3.3rem);font-weight:700}
+.head p{margin:0;color:var(--mut);max-width:38em}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 1.3fr 40px;gap:48px;align-items:center;padding:30px 0}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:clamp(1.5rem,2.6vw,2.1rem);font-weight:700}
+summary span.s{color:var(--mut)}
+summary i{width:36px;height:36px;border:1.5px solid var(--line);border-radius:50%;position:relative;transition:transform .25s,background .25s,border-color .25s}
+summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--fg);transform:translate(-50%,-50%)}
+summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .2s}
+details[open] summary i{transform:rotate(180deg);background:var(--amb);border-color:var(--amb)}
+details[open] summary i::before,details[open] summary i::after{background:var(--onamb)}
+details[open] summary i::after{opacity:0}
+summary:hover h3{color:var(--sea)}
+.det{display:grid;grid-template-columns:1fr 1.3fr 40px;gap:48px;padding:0 0 38px}
+.det div{grid-column:2}
+.det p{margin:0 0 18px;max-width:36em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.9rem;color:var(--mut)}
+.alt{background:var(--bg2)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.tile{background:var(--card);border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;justify-content:space-between;min-height:290px;position:relative;overflow:hidden;transition:border-color .2s}
+.tile:hover{border-color:var(--amb)}
+.tile.a{grid-column:span 4;border-radius:28px 6px 6px 6px;min-height:340px}
+.tile.b{grid-column:span 2;border-radius:6px 28px 6px 6px}
+.tile.c{grid-column:span 3;border-radius:6px 6px 6px 28px}
+.tile.d{grid-column:span 3;border-radius:6px 6px 28px 6px;background:transparent;border-style:dashed}
+.tile h3{font-size:1.8rem;margin-bottom:10px}
+.tile p{margin:0;color:var(--mut);max-width:30em}
+.tile svg{width:100%;height:76px;margin-bottom:26px;stroke:var(--sea);fill:none;stroke-width:1.5}
+.tile a.l{margin-top:22px;font-weight:600;color:var(--amb);text-decoration:none}
+.tile a.l:hover{text-decoration:underline}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+.steps li{padding:30px 28px 0 0;border-top:2px solid var(--line);position:relative;counter-increment:s}
+.steps li::before{content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;background:var(--amb)}
+.steps h3{font-size:1.45rem;margin-bottom:8px}
+.steps li::after{content:counter(s);display:block;order:-1}
+.steps p{margin:0;color:var(--mut);font-size:1rem}
+.band{background:var(--bg2);border-block:1px solid var(--line);padding:84px 0}
+.band p{font:500 clamp(1.5rem,3.4vw,2.6rem)/1.25 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;max-width:24em;margin:0}
+.band small{display:block;margin-top:22px;font-size:1.02rem;color:var(--mut);max-width:38em;font-family:"Instrument Sans",sans-serif;letter-spacing:0}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:64px}
+.contact h2{font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:22px}
+.contact address{font-style:normal;color:var(--mut);margin-top:26px}
+form{display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+input,select,textarea{font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--amb);outline-offset:1px;border-color:transparent}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#ok{margin:0;color:var(--sea);font-weight:500;min-height:1.5em}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:.93rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){
+ .burger{display:block}
+ nav ul{display:none;position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:0;padding:12px 24px 20px}
+ nav ul.open{display:flex}
+ nav li{width:100%;padding:10px 0}
+ .head,.contact,summary,.det{grid-template-columns:1fr;gap:14px}
+ summary{grid-template-columns:1fr 40px}summary span.s{grid-column:1}
+ summary i{grid-row:1;grid-column:2}
+ .det div{grid-column:1}
+ .facts{grid-template-columns:1fr}.facts p+p{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+ .tile.a,.tile.b,.tile.c,.tile.d{grid-column:span 6}
+ .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+ section{padding:72px 0}
+}
+@media (max-width:520px){.steps,.two{grid-template-columns:1fr}.hero::after{background:linear-gradient(180deg,var(--bg) 20%,transparent 100%)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#top" aria-label="Veon Prime home">
+   <svg viewBox="0 0 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7l10 20L24 7" stroke="currentColor" stroke-width="3"/><path d="M27 4l1.5 6" stroke="var(--amb)" stroke-width="3"/></svg>
+   Veon Prime
+  </a>
+  <nav aria-label="Main">
+   <button class="burger" id="bg" aria-expanded="false" aria-controls="mn" aria-label="Menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+   </button>
+   <ul id="mn">
+    <li><a href="#solutions">Solutions</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#approach">How we work</a></li>
+    <li><a href="#contact" class="btn pri">Book a consultation</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+ <div class="hero">
+  <canvas id="f" aria-hidden="true"></canvas>
+  <div class="wrap">
+   <h1>Systems built to last, secured from day one.</h1>
+   <p class="lead">Veon Prime is a Dubai technology company. We help manufacturers, energy operators and healthcare providers adopt AI, connect their operations and protect what they run.</p>
+   <div class="ctas">
+    <a class="btn pri" href="#contact">Book a consultation</a>
+    <a class="btn sec" href="#solutions">See what we do</a>
+   </div>
+  </div>
+ </div>
+ <div class="wrap facts">
+  <p><b>Based at Dubai World Central</b>Close to the region’s industry, logistics and energy hubs.</p>
+  <p><b>One team, three disciplines</b>Consulting, integration and security delivered together.</p>
+  <p><b>Built with global OEMs</b>Partner-backed platforms, adapted to local needs.</p>
+ </div>
+
+ <section id="solutions">
+  <div class="wrap">
+   <div class="head">
+    <h2>Three ways we work with you</h2>
+    <p>Start with one, or bring us in across all three. Each is designed to hand your team something it can run on its own.</p>
+   </div>
+   <details open>
+    <summary><h3>Consulting and AI</h3><span class="s">Digital transformation, AI adoption and process optimization.</span><i></i></summary>
+    <div class="det"><span></span><div>
+     <p>We begin with your operations, not a technology list. We find where work stalls, where AI and automation pay back, and we leave you a roadmap your team can execute.</p>
+     <ul class="tags"><li>Digital transformation</li><li>AI adoption</li><li>Process optimization</li><li>Smart systems</li></ul>
+    </div></div>
+   </details>
+   <details>
+    <summary><h3>OEM partnership and integration</h3><span class="s">Turnkey delivery with leading OEMs and system integrators.</span><i></i></summary>
+    <div class="det"><span></span><div>
+     <p>We combine OEM automation, MES, IIoT and AI platforms with cloud and data infrastructure, so every plant and site works from one shared picture.</p>
+     <ul class="tags"><li>Automation</li><li>MES</li><li>IIoT</li><li>Smart manufacturing</li><li>Cloud integration</li><li>Data infrastructure</li></ul>
+    </div></div>
+   </details>
+   <details>
+    <summary><h3>Infrastructure security</h3><span class="s">AI-based monitoring and threat prevention for buildings, plants and networks.</span><i></i></summary>
+    <div class="det"><span></span><div>
+     <p>Smart building management, industrial surveillance and secure infrastructure, designed with security in from the first drawing instead of added after launch.</p>
+     <ul class="tags"><li>Smart buildings</li><li>Industrial surveillance</li><li>Threat prevention</li><li>Secure infrastructure</li></ul>
+    </div></div>
+   </details>
+  </div>
+ </section>
+
+ <section id="industries" class="alt">
+  <div class="wrap">
+   <div class="head">
+    <h2>Sectors where the work is hardest</h2>
+    <p>Long-lived assets, strict safety rules and little tolerance for downtime. That is where careful engineering pays off.</p>
+   </div>
+   <div class="bento">
+    <article class="tile a">
+     <svg viewBox="0 0 400 76" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C60 60 80 20 140 20 S220 60 280 40 S360 10 400 16"/><path d="M0 68 C60 68 80 34 140 34 S220 68 280 54 S360 26 400 30" opacity=".5"/></svg>
+     <div><h3>Automotive</h3><p>EV transformation, mobility services and connected vehicle ecosystems for manufacturers planning their next platform.</p></div>
+    </article>
+    <article class="tile b">
+     <svg viewBox="0 0 200 76" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40h60l12-26 16 52 14-26h98"/></svg>
+     <div><h3>Oil and gas</h3><p>Pipeline monitoring, asset management and AI-based predictive maintenance.</p></div>
+    </article>
+    <article class="tile c">
+     <svg viewBox="0 0 300 76" preserveAspectRatio="none" aria-hidden="true"><circle cx="40" cy="38" r="22"/><circle cx="40" cy="38" r="8"/><path d="M80 38h60M150 20v36M168 28v20M186 14v48M204 30v16M222 22v32"/></svg>
+     <div><h3>Healthcare</h3><p>Digital health platforms, diagnostics and patient management systems that support regional transformation goals.</p></div>
+    </article>
+    <article class="tile d">
+     <div><h3>Another sector?</h3><p>If your operation depends on connected systems and uptime, we likely have something to offer.</p></div>
+     <a class="l" href="#contact">Tell us about your operation</a>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <div class="band">
+  <div class="wrap">
+   <p>Sustainable means it keeps running efficiently for years, not just that it launches well.</p>
+   <small>Predictive maintenance, energy monitoring and the shift to electric mobility all cut waste. We design for that outcome from the start.</small>
+  </div>
+ </div>
+
+ <section id="approach">
+  <div class="wrap">
+   <div class="head">
+    <h2>How an engagement runs</h2>
+    <p>Four stages, each with a clear deliverable, so you always know what you are getting and what comes next.</p>
+   </div>
+   <ol class="steps">
+    <li><h3>Assess</h3><p>We study your operations, systems and risks, and agree on the outcomes that matter.</p></li>
+    <li><h3>Design</h3><p>We choose the architecture and partners, with security and scale built into the plan.</p></li>
+    <li><h3>Integrate</h3><p>We deploy, connect and test with your teams, one site or line at a time.</p></li>
+    <li><h3>Operate and protect</h3><p>We monitor, tune and train your people, so the system stays reliable and safe.</p></li>
+   </ol>
+  </div>
+ </section>
+
+ <section id="contact" class="alt">
+  <div class="wrap contact">
+   <div>
+    <h2>Tell us what you’re working on</h2>
+    <p style="color:var(--mut);max-width:28em;margin:0">Share a few details and we’ll reply with a suggested first step. No obligation, and no sales script.</p>
+    <address>
+     <a href="mailto:info@veonprime.com" style="color:var(--fg);font-weight:600">info@veonprime.com</a><br>
+     Dubai World Central, Dubai, United Arab Emirates
+    </address>
+   </div>
+   <form id="cf" novalidate>
+    <div class="two">
+     <label>Your name<input name="n" required autocomplete="name"></label>
+     <label>Company<input name="c" autocomplete="organization"></label>
+    </div>
+    <label>Work email<input name="e" type="email" required autocomplete="email"></label>
+    <label>What do you need help with?
+     <select name="t"><option>Consulting and AI</option><option>OEM partnership and integration</option><option>Infrastructure security</option><option>Something else</option></select>
+    </label>
+    <label>Message<textarea name="m" rows="4"></textarea></label>
+    <button class="btn pri" type="submit">Send message</button>
+    <p id="ok" role="status"></p>
+   </form>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap"><span>© 2026 Veon Prime. All rights reserved.</span><span>Registered in Dubai, United Arab Emirates</span></div>
+</footer>
+
+<script>
+(function(){
+ var bg=document.getElementById('bg'),mn=document.getElementById('mn');
+ bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+ mn.addEventListener('click',function(e){if(e.target.tagName==='A'){mn.classList.remove('open');bg.setAttribute('aria-expanded','false')}});
+
+ var c=document.getElementById('f'),x=c.getContext('2d'),w,h,t=0,mx=.7,my=.45,tx=.7,ty=.45,
+  rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function size(){var d=Math.min(window.devicePixelRatio||1,2),r=c.getBoundingClientRect();w=r.width;h=r.height;c.width=w*d;c.height=h*d;x.setTransform(d,0,0,d,0,0);draw()}
+ function draw(){
+  var cs=getComputedStyle(document.documentElement),sea=cs.getPropertyValue('--sea').trim(),amb=cs.getPropertyValue('--amb').trim(),n=34;
+  x.clearRect(0,0,w,h);
+  for(var i=0;i<n;i++){
+   var f=i/(n-1),base=h*(.14+f*.84),hot=i===20;
+   x.beginPath();
+   for(var px=0;px<=w;px+=12){
+    var u=px/w,y=base+Math.sin(u*5+t+f*3)*18*(1-f*.4)+Math.sin(u*11-t*1.3+f*6)*7,
+     d=Math.hypot(u-mx,base/h-my);
+    y-=Math.exp(-d*d*18)*64;
+    px?x.lineTo(px,y):x.moveTo(px,y);
+   }
+   x.strokeStyle=hot?amb:sea;x.globalAlpha=hot?.95:.14+.32*(1-Math.abs(f-.5)*1.6);x.lineWidth=hot?2:1;x.stroke();
+  }
+  x.globalAlpha=1;
+ }
+ function loop(){t+=.006;mx+=(tx-mx)*.05;my+=(ty-my)*.05;draw();requestAnimationFrame(loop)}
+ window.addEventListener('resize',size);
+ c.parentNode.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();tx=(e.clientX-r.left)/r.width;ty=(e.clientY-r.top)/r.height});
+ size();if(!rm)requestAnimationFrame(loop);
+ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+
+ var f=document.getElementById('cf'),ok=document.getElementById('ok');
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(!f.n.value.trim()||!/\S+@\S+\.\S+/.test(f.e.value)){ok.style.color='var(--amb)';ok.textContent='Add your name and a valid work email, then send again.';return}
+  var b='Name: '+f.n.value+'\nCompany: '+f.c.value+'\nEmail: '+f.e.value+'\nInterest: '+f.t.value+'\n\n'+f.m.value;
+  window.location.href='mailto:info@veonprime.com?subject='+encodeURIComponent('Enquiry from '+f.n.value)+'&body='+encodeURIComponent(b);
+  ok.style.color='var(--sea)';ok.textContent='Your email app should open with the message ready to send.';
+ });
+})();
+</script>
+</body>
+</html>
